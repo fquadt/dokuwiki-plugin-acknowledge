@@ -150,7 +150,7 @@ class MailTest extends DokuWikiTest
 
     /**
      * The display name falls back to the login name when the session has none - this is the
-     * bug that made emails say "quadt (quadt)" instead of the real name.
+     * bug that made emails say "username (username)" instead of the real name.
      */
     public function testDisplayNameFallsBackToUsername()
     {
