@@ -522,6 +522,7 @@ class helper_plugin_acknowledge extends Plugin
             case 'render':
                 $html .= '<hr />' . p_wiki_xhtml($page, '', false);
                 break;
+            // 'none' (and any unexpected value) intentionally falls through with no extra content
         }
 
         return ['subject' => $subject, 'text' => $text, 'html' => $html];
